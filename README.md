@@ -10,5 +10,6 @@ Projeto em Java desenvolvido para gerenciar lojas, produtos e estoque.
 
 ## Tecnologias
 - 100% Java
+- 
 - ### IDE
 - BlueJ, por recomendação da faculdade.
