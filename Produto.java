@@ -25,6 +25,9 @@ public class Produto {
     public void setDataValidade(Data dataValidade) { this.dataValidade = dataValidade; }
 
     public boolean estaVencido(Data dataAtual) {
+        // ✅ CORREÇÃO: evitar NullPointerException
+        if (this.dataValidade == null) return false;
+
         if (this.dataValidade.getAno() < dataAtual.getAno()) return true;
         if (this.dataValidade.getAno() == dataAtual.getAno()) {
             if (this.dataValidade.getMes() < dataAtual.getMes()) return true;
@@ -36,6 +39,8 @@ public class Produto {
     }
 
     public String toString() {
-        return "Produto: " + nome + "\nPreço: " + preco + "\nValidade: " + dataValidade;
+        return "Produto: " + nome + 
+               "\nPreço: " + preco + 
+               "\nValidade: " + (dataValidade != null ? dataValidade : "Sem validade");
     }
 }

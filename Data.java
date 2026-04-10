@@ -1,4 +1,3 @@
-
 public class Data {
     private int dia;
     private int mes;
@@ -32,13 +31,27 @@ public class Data {
     }
 
     public int getDia() { return dia; }
-    public void setDia(int dia) { this.dia = dia; }
-
     public int getMes() { return mes; }
-    public void setMes(int mes) { this.mes = mes; }
-
     public int getAno() { return ano; }
-    public void setAno(int ano) { this.ano = ano; }
+
+    // ✅ CORREÇÃO: validação nos setters
+    public void setDia(int dia) {
+        if (dataValida(dia, this.mes, this.ano)) {
+            this.dia = dia;
+        }
+    }
+
+    public void setMes(int mes) {
+        if (dataValida(this.dia, mes, this.ano)) {
+            this.mes = mes;
+        }
+    }
+
+    public void setAno(int ano) {
+        if (dataValida(this.dia, this.mes, ano)) {
+            this.ano = ano;
+        }
+    }
 
     public String toString() {
         return dia + "/" + mes + "/" + ano;
