@@ -34,7 +34,7 @@ public class Data {
     public int getMes() { return mes; }
     public int getAno() { return ano; }
 
-    // ✅ CORREÇÃO: validação nos setters
+  
     public void setDia(int dia) {
         if (dataValida(dia, this.mes, this.ano)) {
             this.dia = dia;
