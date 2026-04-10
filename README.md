@@ -1,12 +1,18 @@
-----------------------------------------------------------------------------
-Este é o arquivo README do projeto. Você deve descrever aqui o seu projeto.
-Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
-ele/ela precisa saber. Os comentários devem incluir, pelo menos:
-------------------------------------------------------------------------
+# Gerenciador de Shopping (Java)
 
-TÍTULO DO PROJETO:
-OBJETIVO DO PROJETO:
-VERSÃO ou DATA:
-COMO INICIAR O PROJETO:
-AUTORES:
-INSTRUÇÕES PARA O USUÁRIO:
+Projeto desenvolvido em Java com foco em Programação Orientada a Objetos.
+
+## Funcionalidades
+- Cadastro de lojas
+- Cadastro de produtos
+- Controle de estoque
+- Verificação de validade
+
+## Conceitos aplicados
+- POO (Programação Orientada a Objetos)
+- Herança e Polimorfismo
+- Arrays
+- Encapsulamento
+
+## Como executar
+Executar a classe Principal.java
