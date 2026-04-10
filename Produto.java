@@ -25,7 +25,7 @@ public class Produto {
     public void setDataValidade(Data dataValidade) { this.dataValidade = dataValidade; }
 
     public boolean estaVencido(Data dataAtual) {
-        // ✅ CORREÇÃO: evitar NullPointerException
+        
         if (this.dataValidade == null) return false;
 
         if (this.dataValidade.getAno() < dataAtual.getAno()) return true;
