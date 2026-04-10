@@ -20,12 +20,12 @@ public class Loja {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
         this.endereco = endereco;
         this.dataFundacao = dataFundacao;
-        // ✅ Correção: evitar tamanho inválido
+        
         this.estoqueProdutos = new Produto[tamanhoEstoque > 0 ? tamanhoEstoque : 10];
         this.produtosCadastrados = 0;
     }
     
-    // Construtores sobrecarregados
+    
     public Loja(String nome, int quantidadeFuncionarios) {
         this(nome, quantidadeFuncionarios, -1, null, null, 10);
     }
@@ -54,7 +54,7 @@ public class Loja {
 
     public boolean removeProduto(String nomeProduto) {
         for (int i = 0; i < produtosCadastrados; i++) {
-            // ✅ Correção: evitar NullPointerException
+            
             if (estoqueProdutos[i] != null &&
                 estoqueProdutos[i].getNome() != null &&
                 nomeProduto != null &&
